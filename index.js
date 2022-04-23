@@ -45,4 +45,4 @@ const run = async () => {
 
 run().catch(console.dir)
 
-app.listen(port, () => console.log("listening to port" + port))  
+app.listen(process.env.PORT || port, () => console.log("listening to port" + port))  
